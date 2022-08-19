@@ -105,8 +105,9 @@ Find ID work-queue
 prefect work-queue ls
 ```
 
-3.6.1 Prefect UI
-Go to work queues, click ny-taxi-trip-queue
+3.6.1 Prefect UI  
+Go to work queues, click ny-taxi-trip-queue    
+![alt text](images/prefect-work-queue.jpg)    
 
 Agent Start
 ```bash
