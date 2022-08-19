@@ -1,6 +1,6 @@
 # mlflow-prefect
 
-# How to Run
+# 1. How to Run
 
 To do this, follow the steps below by running the given commands within a Git bash (Windows), or terminal (Mac/Linux):
 
@@ -53,30 +53,30 @@ Open mlflow at http://127.0.0.1:5000
 
 # 3. Run Prefect locally
 
-3.1 Execute a prefect flow:
+Execute a prefect flow one time:
 
 ```bash
 python flow.py
 ```
 
-3.2 Run prefect ui
+3.1 Run prefect ui
 ```bash
 prefect orion start
 ```
 
 Open prefect at http://127.0.0.1:4200  
 
-3.3 Create workqueue
+3.2 Create workqueue
 ```bash
 prefect work-queue create -t "ny-taxi-trip-queue" ny-taxi-dev
 ```
 
-3.4 Build deployment
+3.3 Build deployment
 ```bash
 prefect deployment build ./flow.py:run --name "ny-taxi-trip-pred" -t ny-taxi-dev -o ny-taxi-prediction.yaml
 ```
 
-3.5. Creating schedules through the deployment YAML file
+3.4 Creating schedules through the deployment YAML file
 
 Open ny-taxi-prediction.yaml in root folder and add interval: 600.0 in block "schedule:"
 
