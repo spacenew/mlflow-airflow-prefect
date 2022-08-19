@@ -78,7 +78,7 @@ prefect deployment build ./flow.py:run --name "ny-taxi-trip-pred" -t ny-taxi-dev
 
 3.4 Creating schedules through the deployment YAML file
 
-Open ny-taxi-prediction.yaml in root folder and add interval: 600.0 in block "schedule:"
+Open ny-taxi-prediction.yaml in root folder and add "interval: 600" into block "schedule:"
 
 interval in seconds.
 
