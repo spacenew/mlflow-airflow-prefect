@@ -16,7 +16,7 @@ cd into the project root folder
 ```bash
 cd mlflow-prefect
 ```
-*Needed Packages*
+*Requirements*
 
 python=3.9.9  
 mlflow  
